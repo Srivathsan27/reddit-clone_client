@@ -1,6 +1,5 @@
 import { Box, ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import { withUrqlClient } from "next-urql";
-import Head from "next/head";
 import { createURQLClient } from "../cache/client";
 import Navbar from "../components/Nav/Navbar";
 import Footer from "../components/UI/Footer";

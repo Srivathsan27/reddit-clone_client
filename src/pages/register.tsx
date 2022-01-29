@@ -1,5 +1,5 @@
 import { withUrqlClient } from "next-urql";
-import { Head } from "next/document";
+import Head from "next/head";
 import { FC } from "react";
 import { createURQLClient } from "../cache/client";
 import SingleFormPage from "../components/general/SingleFormPage";

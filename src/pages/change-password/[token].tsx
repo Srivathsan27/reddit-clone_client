@@ -1,16 +1,14 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
-import { Formik, Form } from "formik";
-import { NextPage } from "next";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Form, Formik } from "formik";
+import { withUrqlClient } from "next-urql";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { createURQLClient } from "../../cache/client";
 import FormInput from "../../components/FormInput";
-import Wrapper from "../../components/UI/Wrapper";
+import SingleFormPage from "../../components/general/SingleFormPage";
 import { useChangePasswordMutation } from "../../generated/graphql";
 import { toErrorMap } from "../../utils/toErrorMap";
-import { useRouter } from "next/router";
-import { withUrqlClient } from "next-urql";
-import { createURQLClient } from "../../cache/client";
-import { useState } from "react";
-import SingleFormPage from "../../components/general/SingleFormPage";
-import Head from "next/head";
 
 const ChangePasswordForm: React.FC = () => {
   const [, changePassword] = useChangePasswordMutation();

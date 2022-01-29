@@ -5,7 +5,7 @@ import Head from "next/head";
 import { createURQLClient } from "../../cache/client";
 import UserProfile from "../../components/profile/UserProfile";
 import Wrapper from "../../components/UI/Wrapper";
-import { useGetProfileQuery, useMeQuery } from "../../generated/graphql";
+import { useGetProfileQuery } from "../../generated/graphql";
 import { useIsAuth } from "../../utils/hooks/useIsAuth";
 import { isServer } from "../../utils/isServer";
 
