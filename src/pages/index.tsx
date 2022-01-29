@@ -1,4 +1,4 @@
-import { Flex, Spinner, Text } from "@chakra-ui/react";
+import { Box, Flex, Spinner, Text } from "@chakra-ui/react";
 import { withUrqlClient } from "next-urql";
 import Head from "next/head";
 import { useState } from "react";
@@ -19,12 +19,16 @@ const Index = () => {
 
   if (loadingPosts) {
     body = (
-      <Flex alignSelf="center">
+      <Flex alignSelf="center" minH="85vh" w="100%">
         <Spinner size="xl" />
       </Flex>
     );
   } else if (!loadingPosts && !postsData?.posts.posts) {
-    body = <Text>Oops, Something went Wrong!</Text>;
+    body = (
+      <Box minH="85vh">
+        <Text>Oops, Something went Wrong!</Text>
+      </Box>
+    );
   } else {
     const posts = postsData?.posts.posts as Post[];
 
