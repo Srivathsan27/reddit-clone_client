@@ -29,7 +29,7 @@ const Index = () => {
     const posts = postsData?.posts.posts as Post[];
 
     body = (
-      <Flex pt="5%">
+      <Flex pt="5%" minH="85vh">
         <PostList
           posts={posts}
           onClick={() => {
