@@ -1,0 +1,14 @@
+query TaggedUsers($id: Int!) {
+  tagged(id: $id) {
+    taggedUsers {
+      id
+      isOwnAccount
+      username
+      isTagged
+    }
+    error {
+      field
+      message
+    }
+  }
+}

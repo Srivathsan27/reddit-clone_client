@@ -1,0 +1,5 @@
+query MyComments {
+  myComments {
+    ...comment_details
+  }
+}

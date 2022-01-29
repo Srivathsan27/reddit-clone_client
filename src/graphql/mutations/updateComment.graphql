@@ -1,0 +1,3 @@
+mutation UpdateComment($post: Int!, $text: String!) {
+  updateComment(post: $post, text: $text)
+}

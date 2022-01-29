@@ -1,0 +1,11 @@
+query Post($id: Int!) {
+  post(id: $id) {
+    post {
+      ...single_post
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

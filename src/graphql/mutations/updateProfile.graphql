@@ -1,0 +1,14 @@
+mutation UpdateProfile($id: Int!, $values: ProfileInput!) {
+  updateProfile(id: $id, input: $values) {
+    profile {
+      userId
+      name
+      bio
+      sex
+    }
+    error {
+      field
+      message
+    }
+  }
+}

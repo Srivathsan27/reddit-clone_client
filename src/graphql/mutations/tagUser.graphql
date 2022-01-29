@@ -1,0 +1,3 @@
+mutation TagUser($friendId: Int!) {
+  tagUser(friendId: $friendId)
+}

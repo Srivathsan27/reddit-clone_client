@@ -1,0 +1,15 @@
+fragment post_all on Post {
+  id
+  createdAt
+  updatedAt
+  title
+  contentSnip
+  numberOfHits
+  numberOfComments
+  hitStatus
+  creatorId
+  creator {
+    id
+    username
+  }
+}

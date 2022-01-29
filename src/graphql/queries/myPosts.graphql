@@ -1,0 +1,8 @@
+query MyPosts($limit: Int!, $cursor: String) {
+  myPosts(limit: $limit, cursor: $cursor) {
+    posts {
+      ...post_all
+    }
+    hasMorePosts
+  }
+}

@@ -1,0 +1,22 @@
+fragment single_post on Post {
+  id
+  hitStatus
+  isOwnPost
+  title
+  content
+  numberOfHits
+  comments {
+    userId
+    postId
+    isOwnComment
+    text
+    createdAt
+    user {
+      username
+    }
+  }
+  creator {
+    id
+    username
+  }
+}

@@ -1,0 +1,3 @@
+mutation HitPost($post: Int!, $value: Int!) {
+  hitPost(post: $post, value: $value)
+}

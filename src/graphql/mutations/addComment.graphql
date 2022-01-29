@@ -1,0 +1,13 @@
+mutation CommentPost($post: Int!, $comment: String!) {
+  addComment(post: $post, comment: $comment) {
+    comment {
+      userId
+      postId
+      text
+    }
+    error {
+      field
+      message
+    }
+  }
+}

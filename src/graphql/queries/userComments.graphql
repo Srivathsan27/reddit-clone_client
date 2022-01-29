@@ -1,0 +1,5 @@
+query GetComments($id: Int!) {
+  userComments(id: $id) {
+    ...comment_details
+  }
+}

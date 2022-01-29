@@ -1,0 +1,7 @@
+fragment comment_details on Comment {
+  postId
+  text
+  createdAt
+  postTitle
+  isOwnComment
+}

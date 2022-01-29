@@ -1,0 +1,3 @@
+mutation UntagUser($friendId: Int!) {
+  untagUser(friendId: $friendId)
+}
