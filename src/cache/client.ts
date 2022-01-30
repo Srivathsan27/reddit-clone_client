@@ -100,6 +100,7 @@ export const createURQLClient = (ssrExchange: any, ctx: any) => {
   if (isServer()) {
     cookie = ctx?.req?.headers?.cookie;
   }
+  console.log("cookie: ", cookie);
   return {
     url: process.env.NEXT_PUBLIC_API_URL as string,
     fetchOptions: {
