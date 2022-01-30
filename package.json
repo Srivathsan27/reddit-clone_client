@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "heroku-postbuild": "next build",
     "start": "next start",
     "gen": "graphql-codegen --config codegen.yml"
   },
